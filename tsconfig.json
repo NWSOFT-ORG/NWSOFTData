@@ -1,0 +1,16 @@
+{
+    "files": [
+        "index.ts"
+    ],
+    "compilerOptions": {
+        "sourceMap": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

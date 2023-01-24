@@ -1,0 +1,10 @@
+{
+    "nwedit": {
+        "version": "0.6",
+        "details": "Bug fixes and improvements",
+        "url": "https://github.com/NWSOFT-ORG/NWEdit/archive/refs/tags/v0.6.zip"
+    },
+    "nwsoft": {
+        "projects": ["NWEdit"]
+    }
+}
