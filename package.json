@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "description": "Data for NWSFOT",
     "main": "index.js",
+    "engines": { "node": "16.x" },
     "scripts": {
         "tsc": "tsc",
-      "start": 
+        "start": "node index.js"
     },
     "keywords": [],
     "author": "",
