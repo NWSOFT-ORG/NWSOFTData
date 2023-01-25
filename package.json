@@ -4,7 +4,8 @@
     "description": "Data for NWSFOT",
     "main": "index.js",
     "scripts": {
-        "tsc": "tsc"
+        "tsc": "tsc",
+      "start": 
     },
     "keywords": [],
     "author": "",
