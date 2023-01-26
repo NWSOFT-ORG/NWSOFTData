@@ -14,6 +14,7 @@ export function createRoutes(app: Express): void {
 
     keys.forEach(function (item: string): void {
         app.get(`/${item}`, function (req: Request, res: Response): void {
+            res.header("Allow-Access-Control-Origin", "*");
             res.json(values.at(keys.indexOf(item)));
         });
     });

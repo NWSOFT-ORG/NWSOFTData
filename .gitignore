@@ -10,6 +10,10 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# TypeScript Compiled JavaScript files
+*.js
+*.js.map
+
 # Runtime data
 pids
 *.pid

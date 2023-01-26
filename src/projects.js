@@ -37,6 +37,7 @@ function createRoutes(app) {
     var values = Object.values(projects);
     keys.forEach(function (item) {
         app.get("/".concat(item), function (req, res) {
+            res.header("Allow-Access-Control-Origin", "*");
             res.json(values.at(keys.indexOf(item)));
         });
     });
