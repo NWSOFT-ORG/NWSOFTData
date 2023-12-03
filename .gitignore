@@ -14,6 +14,10 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 *.js
 *.js.map
 
+# Keys
+*.key
+*.pem
+
 # Runtime data
 pids
 *.pid

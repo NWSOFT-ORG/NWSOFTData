@@ -1,8 +1,15 @@
 import express, {Express, Request, Response} from "express";
 import {createRoutes} from "./src/projects";
+import https from "https";
+import http from "http";
+import fs from "fs";
 
 const app: Express = express();
 const port = 8000;
+const options = {
+  key: fs.readFileSync('cert.key').toString(),
+  cert: fs.readFileSync('cert.pem').toString()
+};
 
 app.get("/", function (req: Request, res: Response) {
     res.sendFile(__dirname + "/public/index.html");
@@ -41,6 +48,9 @@ app.use(function (req: Request, res: Response) {
     res.type("txt").send("Not found");
 });
 
-app.listen(port, () => {
-    console.log(`[server]: Server is running at http://localhost:${port}`);
+const serverHttps = https.createServer(options, app);
+serverHttps.listen(443, "0.0.0.0", () => {
+    console.log("server starting on port : " + port);
 });
+
+app.listen(80, "0.0.0.0");
